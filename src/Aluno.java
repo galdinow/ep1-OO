@@ -3,7 +3,7 @@ public class Aluno {
     private Integer matricula;
     private Integer cpf; //validar cpf
 
-    public void Aluno(){
+    public Aluno(){
 
     }
 
