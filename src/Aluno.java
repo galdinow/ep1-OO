@@ -3,8 +3,11 @@ public class Aluno {
     private Integer matricula;
     private Integer cpf; //validar cpf
 
-    public Aluno(){
-
+    public Aluno(String nome, Integer matricula, Integer cpf, String curso){
+        this.nome =nome;
+        this.matricula = matricula;
+        this.cpf = cpf;
+        this.curso = curso;
     }
 
     public void setNome(String nome) {
