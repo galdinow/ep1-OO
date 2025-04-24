@@ -30,4 +30,5 @@ public class Aluno {
     public Integer getCpf(){
         return this.cpf;
     }
+
 }
