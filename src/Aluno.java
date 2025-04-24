@@ -2,6 +2,7 @@ public class Aluno {
     private String nome;
     private Integer matricula;
     private Integer cpf; //validar cpf
+    private String curso;
 
     public Aluno(String nome, Integer matricula, Integer cpf, String curso){
         this.nome =nome;
@@ -32,6 +33,14 @@ public class Aluno {
 
     public Integer getCpf(){
         return this.cpf;
+    }
+
+    public void setCurso(String curso){
+        this.curso = curso;
+    }
+
+    public String getCurso(){
+        return this.curso;
     }
 
 }
