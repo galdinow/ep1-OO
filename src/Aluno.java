@@ -38,6 +38,7 @@ public class Aluno {
     public void setCurso(String curso){
         this.curso = curso;
     }
+    public static void salvarAluno( Aluno aluno, String nomeArquivo){
 
     public String getCurso(){
         return this.curso;
