@@ -40,8 +40,14 @@ public class Aluno {
     }
     public static void salvarAluno( Aluno aluno, String nomeArquivo){
 
-    public String getCurso(){
-        return this.curso;
+        try {
+            FileWriter writer = new FileWriter(nomeArquivo, true);
+            writer.write(aluno.toCSV() + "\n");
+            writer.close();
+
+        }catch (IOException e){
+            System.out.println("Erro ao salvar aluno" + e.getMessage());
+        }
     }
 
 }
